@@ -29,7 +29,7 @@ var server	=	http.createServer(function(request,response){
 	var pathname	=	url.parse(request.url).pathname;
 
 	// Processando roteamento do pathname
-	var page		=	route(pathname);
+	var page	=	route(pathname);
 
 	// Renderizando a página HTML
 	fs.readFile(page, function(err,html){
