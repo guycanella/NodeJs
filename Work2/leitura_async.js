@@ -1,5 +1,5 @@
 
-var fs	=	require('fs');
+var fs			=	require('fs');
 
 var leituraAsync	=	function(arquivo){
 	console.log("Fazendo leitura assíncrona");
@@ -9,4 +9,4 @@ var leituraAsync	=	function(arquivo){
 	console.log("Bloqueio assíncrono: " + (fim - inicio) + "ms");
 };
 
-module.exports	=	leituraAsync;
+module.exports		=	leituraAsync;
