@@ -1,11 +1,11 @@
 
-var http			=	require('http');
-var fs				=	require('fs');
+var http		=	require('http');
+var fs			=	require('fs');
 var leituraAsync	=	require('./leitura_async');
 var leituraSync		=	require('./leitura_sync');
 
-var arquivo			=	"./node.exe";
-var stream			=	fs.createWriteStream(arquivo);
+var arquivo		=	"./node.exe";
+var stream		=	fs.createWriteStream(arquivo);
 var download		=	"http://nodejs.org/dist/latest/node.exe";
 
 http.get(download,function(res){
